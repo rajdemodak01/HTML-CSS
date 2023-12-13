@@ -1,0 +1,18 @@
+#firstpara{
+    color: red;
+}
+#secondpara{
+    background-color: rgb(247, 127, 7);
+}
+#thirdpara{
+    background-color: rgba(10, 246, 57, 0.56);
+}
+.firstclass{
+    background-color: #ffab23d9;
+}
+#fourpara{
+    background-color: hsl(16, 86%, 48%);
+}
+#fifthpara{
+    background-color: rgba(16, 219, 121, 0.882);
+}

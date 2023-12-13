@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    background-color: antiquewhite;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;    
+}
+.item{
+    padding: 2rem;
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    border: 2px solid black;
+}
+#rotatex:hover{
+    transform: rotateX(45deg);
+}
+#rotatey:hover{
+    transform: rotateY(-45deg);
+}
+#rotatez:hover{
+    transform: rotateZ(45deg);
+}
+#translatex:hover{
+    transform: translateX(100px);
+}
+#translatey:hover{
+    transform: translateY(100px);
+}
+#translatez:hover{
+    transform:perspective(300px) translateZ(100px);
+}
+#scalex:hover{
+    transform: scaleX(1.5);
+}
+#scaley:hover{ 
+    transform:scaleY(1.5);
+}
+#scalez:hover{
+    transform:perspective(300px) rotateY(30deg) scale(1.5);
+}
+#skewx:hover{
+    transform: skewX(30deg);
+}
+#skewy:hover{
+    transform: skewY(30deg);
+}
+#skewz:hover{
+    transform:perspective(300px) skewZ(30deg);
+}

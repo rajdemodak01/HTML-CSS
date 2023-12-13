@@ -1,0 +1,54 @@
+:root{
+    --primary-color:red;
+    --custom-width:330px;
+    /*if we define variables under root it become global variable. you can access it from anywhere*/
+
+}
+.container{
+    background-color: beige;
+    height: 650px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: aquamarine;
+    width: var(--custom-width);
+    height: 330px;
+    border: 1px solid var(--primary-color);
+    margin: 5px;
+    padding: 5px;
+
+    /* box-shadow: 10px -10px brown; */
+    /* box-shadow:x-offset y-offset color; */
+
+    /* box-shadow: 10px 15px 50px brown; */
+    /* box-shadow:x-offset y-offset blur-radius color */
+
+    /* box-shadow: 10px 15px 5px 100px brown; */
+    /* box-shadow: x-offset y-offset blur-radius spread color; */
+
+    /* box-shadow: inset 10px 15px brown; */
+    /* box-shadow: shadow position(inside or outside) x-offset y-offset color*/
+
+    box-shadow: 5px 10px green,10px 15px var(--primary-color);
+    /* two shadow */
+
+}
+#head1{
+    /* text-shadow: 2px 3px 2px white; */
+    /* text-shadow: x-offset y-offset blur-radius color */
+
+    /* text-shadow: yellow 5px 6px 2px; */
+    /* text-shadow: color x-offset y-offset blur-radius; */
+
+    /* text-shadow: yellow 5px 6px; */
+    /* text-shadow: color x-offset y-offset; */
+
+    /* text-shadow: 12px 13px; */
+    /* by default shadow color is black */
+
+    text-shadow: 5px 5px red,10px 10px green, 15px 15px blue;
+    /* multiple shadows can be added as box-shadow */
+}

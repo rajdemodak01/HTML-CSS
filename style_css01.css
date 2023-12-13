@@ -1,0 +1,23 @@
+h1{
+    font-size: smaller;
+    text-align: center;
+}
+p{
+    color: blueviolet;
+}
+#article1{
+    background-color: green;
+}
+.paraclass{
+    background-color: yellow;
+    background-color: red;
+    background-color: aqua;
+    /* latest property will be selected */
+}
+p,article{
+    max-width: 500px;
+}
+article.paraclass{
+    background-color:pink;
+}
+

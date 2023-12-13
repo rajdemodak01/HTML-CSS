@@ -1,0 +1,42 @@
+.container{
+    background-color: beige;
+    border: 5px solid black;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    /*flex-direction: row;
+    height: 800px;
+    justify-content: start;
+    align-items: start;
+    align-content: center; */
+}
+.box{
+    border: 3px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 2px;
+    padding: 2px;
+
+}
+#box1{
+    background-color: aqua;
+}
+#box2{
+    background-color: blue;
+}
+#box3{
+    background-color: orange;
+}
+#box4{
+    background-color: brown;
+}
+@media (min-width: 640px) {
+    .container{
+        flex-direction: row;
+    }
+}
+@media(max-width:640px){
+    .container{
+        flex-direction: column;
+    }
+}

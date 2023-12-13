@@ -1,0 +1,58 @@
+.container{
+    background-color: forestgreen;
+    border: 5px solid black;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    height: 800px;
+    /* by default flex direction is row */
+
+    justify-content:start;
+    /* here the flex-direction is row then the items will be places in center of main(horizontal) axis */
+
+    align-items: start;
+    /* by default align items is stretch if we do not mention the height of the box */
+
+
+    /* flex-direction: column-reverse; */
+    
+    /* flex-wrap: wrap; */
+    /* some swap properties are wrap, nowrap,wrap-reverse */
+
+    /* The three properties assigned to the .item class can be shortened in one line using the flex shorthand property. You have to enter the values in this order:
+
+    flex-grow
+    flex-shrink
+    flex-basis
+    Edit the CSS code:
+    .item { flex: 1 1 150px; } */
+
+    /* flex-flow:wrap; */
+
+    align-content: start;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid brown;
+    margin: 2px;
+    padding: 2px;
+}
+#box1{
+    background-color: aqua;
+    /* order: 500; */
+    /* flex-shrink: 4; */
+    /* flex-grow: 5; */
+    align-self: center;
+}
+#box2{
+    background-color: azure;
+}
+#box3{
+    background-color: bisque;
+}
+#box4{
+    background-color: blue;
+    /* order: -1; */
+    /* flex-basis: 500px; */
+}

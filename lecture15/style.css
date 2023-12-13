@@ -1,0 +1,89 @@
+*{
+    /* universal selector */
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: aquamarine;
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: brown; */
+
+    /* both way to give border is same */
+    /* this is short hand notation */
+    /* border: solid brown 2px; */
+    
+    /* border radius is used to give round shape of the border */
+    
+    /* this will make all corder's round */
+    /* border-radius: 5px; */
+
+    /* this will make only specified corder's round */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /*if you wanns give border to specific side-wither left or right*/
+    border-bottom: solid brown 2px;
+     
+}
+span{
+    background-color: aqua;
+    border: solid brown 2px;
+    border-radius: 3px;
+    
+    /* height and width property doesnot work for spam tag */
+    /* Width & height don't apply to the span tag because it is an inline element it will take space according to the content written in it. */
+
+    width: 500px;
+    height: 500px;
+}
+#firstpara{
+    background-color: blanchedalmond;
+    border: solid brown 2px;
+    border-radius: 5px;
+    height: 167px;
+    width: 225px;
+
+    padding: 50px;
+    margin: 72px;
+}
+#secondpara{
+    background-color: beige;
+    border: solid brown 2px;
+    border-radius: 5px;
+
+    /* padding-left: 100px;
+    padding-top: 10px;
+    padding-right: 80px;
+    padding-bottom:70px */
+
+    /* padding: top right bottom left; */
+    padding: 10px 80px 70px 100px;
+    /* margin-top: 100px;
+    margin-left: 50px; */
+
+    /* short hand style just like padding */
+    /* margin: top right bottom left; */
+    margin: 100px 0px 0px 50px;
+
+
+
+}
+#thirdpara{
+    background-color: yellowgreen;
+    border: solid brown 2px;
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+
+    /* padding: top-bottom left-right; */
+    padding: 50px 10px;
+
+    /* The box-sizing property allows us to include the padding and border in an element's total width and height.
+If you set box-sizing: border-box; on an element, padding, and border are included in the width and height. */
+
+
+    box-sizing:border-box;
+}

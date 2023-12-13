@@ -1,0 +1,23 @@
+#div1{
+    background-color: rgb(30, 27, 27);
+    height: 200px;
+    width:325px;
+    border-radius: 10px;
+    border-color: white;
+}
+#div2{
+    background-color: rgb(139, 130, 130);
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+    width: 325px;
+    height: 45px;
+    text-align: left;
+    padding: 13px;
+    box-sizing: border-box;    
+    color: white;
+}
+#img{
+    width: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
