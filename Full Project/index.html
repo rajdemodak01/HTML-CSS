@@ -160,24 +160,89 @@
             </div>
         </div>
     </div>
+
+    <div class="testimonial-container">
+        <div class="testimonial-content">
+            <h2 class="testimonial-title">
+                What others say about us
+            </h2>
+            <div class="testimonial-grid">
+                <!-- card 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias, iste nam obcaecati nostrum rerum.
+                    </div>
+                    <div class="testimonial-avatar">
+                        <img src="./images/IMG_20230507_113254.jpg" alt="">
+                    </div>
+                    <div class="testimonial-details">
+                        <h3 class="testimonial-name">john doe</h3>
+                        <p class="testimonial-desc">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias, iste nam obcaecati nostrum rerum.
+                    </div>
+                    <div class="testimonial-avatar">
+                        <img src="./images/IMG_20230507_113254.jpg" alt="">
+                    </div>
+                    <div class="testimonial-details">
+                        <h3 class="testimonial-name">john doe</h3>
+                        <p class="testimonial-desc">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias, iste nam obcaecati nostrum rerum.
+                    </div>
+                    <div class="testimonial-avatar">
+                        <img src="./images/IMG_20230507_113254.jpg" alt="">
+                    </div>
+                    <div class="testimonial-details">
+                        <h3 class="testimonial-name">john doe</h3>
+                        <p class="testimonial-desc">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 <script>
     const menuButton = document.querySelector('.menu-button');
     var navRight = document.querySelector('.nav-right');
-    let isNavVisible = false;
+    const body=document.querySelector('body');
 
     window.addEventListener('resize', function() {
         if (window.matchMedia('(min-width: 1050px)').matches) {
             navRight.style.display = 'none';
+            menuButton.style.display = 'none';
+        }
+        if(window.matchMedia('(max-width: 1050px)').matches) {
+            menuButton.style.display = 'block';
         }
     });
 
     menuButton.addEventListener('click', function() {
         navRight.style.display = 'flex';
+        menuButton.style.display = 'none';
     });
     navRight.addEventListener('click', function() {
         navRight.style.display = 'none';
+        menuButton.style.display = 'block';
+    });
+    
+    
+    //This code should be added to your existing JavaScript code. The event.target is the element that was clicked. The contains method checks if the clicked element is the menuButton or a child of menuButton (or navRight). If the clicked element is not menuButton or a child of menuButton (or navRight), the navRight is hidden and the menuButton is shown.
+    body.addEventListener('click', function(event) {
+        if(navRight.style.display == 'flex' && !menuButton.contains(event.target) && !navRight.contains(event.target)){
+            navRight.style.display = 'none';
+            menuButton.style.display = 'block';
+            status = false;
+        }
     });
 </script>
 </html>
