@@ -27,6 +27,14 @@
             <button class="menu-button">
                 <img src="./images/menu.png" alt="Menu" class="menu-icon"> 
             </button>
+            <nav class="nav-right">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#prcing" class="nav-link">Pricing</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="contact">Contact us</a>
+            </nav>
         </header>
     </div>
     <div class="content">
@@ -156,28 +164,20 @@
 </body>
 <script>
     const menuButton = document.querySelector('.menu-button');
-    const nav = document.querySelector('.nav');
+    var navRight = document.querySelector('.nav-right');
     let isNavVisible = false;
 
     window.addEventListener('resize', function() {
         if (window.matchMedia('(min-width: 1050px)').matches) {
-            nav.style.flexDirection = 'row';
-        } else {
-            nav.style.display = 'none';
+            navRight.style.display = 'none';
         }
     });
-    menuButton.addEventListener('click', () => {
-        if (isNavVisible) {
-            nav.style.display = 'none';
-            isNavVisible = false;
-        } else {
 
-            nav.style.display = 'flex';
-            nav.style.flexDirection = 'column';
-            nav.style.alignItems = 'start';
-            // nav.style.justifyContent = 'start';
-            isNavVisible = true;
-        }
+    menuButton.addEventListener('click', function() {
+        navRight.style.display = 'flex';
+    });
+    navRight.addEventListener('click', function() {
+        navRight.style.display = 'none';
     });
 </script>
 </html>

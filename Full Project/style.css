@@ -106,6 +106,33 @@ body{
 }
 
 
+.nav-right{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 15vw;
+    background-color: var(--gray);
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding: 2rem;
+    z-index: 9999;
+    
+}
+
+.nav-right a{
+    color: var(--light-gray);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.1s; /* important */
+}
+.nav-right a:hover{
+    color: var(--primary-color);
+}
+
+
 /* Hero Section */
 .main-section{
     /* height: 1280px; */
@@ -198,11 +225,11 @@ body{
 @keyframes slideFromRight{
     0%{
         transform: translateX(100%);
-        opacity: 0;
+        /* opacity: 0; */
     }
     100%{
-        transform: translateX(0);
-        opacity: 1;
+        transform: translateX(0%);
+        /* opacity: 1; */
     }
 }
 
